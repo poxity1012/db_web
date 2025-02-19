@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顯示資料庫圖片</title>
+    <style>
+        #imageContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #imageContainer img {
+            width: 200px; /* 設定圖片寬度 */
+            margin: 10px; /* 設定邊距 */
+            border-radius: 8px; /* 圓角 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* 陰影效果 */
+        }
+        #loadingIndicator {
+            display: none;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script type="module" src="script.js"></script> <!-- 引入 JavaScript 文件 -->
+</head>
+<body>
+    <button id="loadImagesBtn">載入所有圖片</button>
+    <div id="loadingIndicator">圖片載入中...</div>
+    <div id="imageContainer"></div>
+</body>
+</html>
